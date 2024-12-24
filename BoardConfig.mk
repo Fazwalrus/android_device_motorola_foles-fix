@@ -48,4 +48,5 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_USES_RECOVERY_AS_BOOT := true
 
 # SELinux
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
