@@ -27,6 +27,7 @@ TARGET_USES_FOD_ZPOS := true
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/motomods_manifest.xml
 
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/foles_defconfig
@@ -50,3 +51,6 @@ BOARD_USES_RECOVERY_AS_BOOT := true
 # SELinux
 BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+# PRODUCT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/private
+# PRODUCT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/public
+# BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy-mods/vendor

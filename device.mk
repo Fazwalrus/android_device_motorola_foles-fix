@@ -58,7 +58,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.sys.foles.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.sys.foles.rc
+    
 PRODUCT_PACKAGES += \
+    init.foles.rc \
+    init.gbmods.sh \
     init.mmi.overlay.rc
 
 # Lights

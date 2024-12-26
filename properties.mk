@@ -27,6 +27,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.hdr.config=/vendor/etc/hdr_tm_config.xml
 
+# Mods
+PRODUCT_PROPERTY_OVERRIDES += \
+    sys.mod.platformsdkversion=281
+
 # Sensor
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.hardware.sensors=foles \
